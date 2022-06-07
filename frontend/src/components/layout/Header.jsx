@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
-//import Header.css en la carpeta css/layout
 import '../../css/layout/Header.css';
-
 
 function Nav() {
     return (

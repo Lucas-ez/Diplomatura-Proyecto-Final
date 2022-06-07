@@ -1,5 +1,8 @@
-body {
+* {
   margin: 0;
+}
+
+body {
   font-family: 'Source Sans Pro', sans-serif;
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(17, 17, 17) 55%, rgb(34, 34, 34) 100%);

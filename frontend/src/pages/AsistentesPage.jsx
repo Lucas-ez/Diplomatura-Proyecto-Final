@@ -1,15 +1,83 @@
+import googleImg from "../img/asistentes/googlehome.png"
+import amazonImg from "../img/asistentes/amazonecho.png"
+import appleImg from "../img/asistentes/applehomepod.png"
+
+import {Subtitle, Title} from "../components/Titles"
+
+const asistentes = [
+    {
+        img: googleImg,
+        nombreImg: "Google Home",
+        titulo: "Google Assistant",
+        descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe dolor facilis cumque, nisi, debitis iusto officia neque sed accusamus possimus nesciunt eveniet excepturi dolores quidem harum laboriosam quaerat autem."
+    },
+    {
+        img: amazonImg,
+        nombreImg: "Amazon Echo",
+        titulo: "Alexa",
+        descripcion: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe dolor facilis cumque, nisi, debitis iusto officia neque sed accusamus possimus nesciunt eveniet excepturi dolores quidem harum laboriosam quaerat autem."
+    },
+    {
+        img: appleImg,
+        nombreImg: "Apple HomePod",
+        titulo: "Siri",
+        descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe dolor facilis cumque, nisi, debitis iusto officia neque sed accusamus possimus nesciunt eveniet excepturi dolores quidem harum laboriosam quaerat autem."
+    }
+]
+
+const Asistente = ({ img, nombreImg, titulo, descripcion }) => {
+    
+    return (
+        <div style={
+            {   
+                paddingInline: '12%',
+                display: "flex",
+                alignItems: "center",
+                gap: "1.5em",
+                marginBottom: (titulo==="Alexa")?"2em":"6em",
+                flexDirection: (titulo==="Alexa")?"row-reverse":"row",
+            }
+        }>
+            <img src={img} alt={nombreImg} style={
+                {
+                    display: "block",
+                    width: "35%",
+                }
+            }/>
+            <div>
+                <Subtitle txt={titulo} />
+                <p style={
+                {   
+                    paddingTop: "2rem",
+                    fontSize: "2em",
+                }
+            }>{descripcion}</p>
+            </div>
+        </div>
+    )
+}
+
 function AsistentesPage() {
     return (
-        <div>
-            <h1>Asistentes</h1>
-            <ul>
-                <li>uno</li>
-                <li>dos</li>
-                <li>tres</li>
-                <li>cuatro</li>
-            </ul>
-        </div>
-        )
+        <main>
+            <Title txt="Asistentes de voz" />
+            <p style={
+                {
+                    paddingInline: '10%',
+                    paddingBottom: '8rem',
+                    fontSize: "2em",
+                    textAlign: "left",
+                }
+            }>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis saepe dolor facilis cumque, nisi, debitis iusto officia neque sed accusamus possimus nesciunt eveniet excepturi dolores quidem harum laboriosam quaerat autem.
+            </p>
+            {
+                asistentes.map(asistente => (
+                    <Asistente key={asistente.nombreImg} {...asistente} />
+                ))
+            }
+        </main>
+    )
 }
 
 export default AsistentesPage;
