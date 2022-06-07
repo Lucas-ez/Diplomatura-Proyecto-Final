@@ -4,11 +4,10 @@
 
 .link {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .logo {
-
     font-family: 'Smooch', cursive;
     font-size: 72px;
     font-weight: lighter;
@@ -18,4 +17,25 @@
 li {
     list-style: none;
     font-size: 20px;
+}
+
+header {
+    padding-inline: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-inline: 10px;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    font-family: 'Koulen', cursive;
 }

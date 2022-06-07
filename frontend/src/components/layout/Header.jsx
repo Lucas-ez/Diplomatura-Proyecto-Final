@@ -19,10 +19,10 @@ function Nav() {
 
 function Header() {
     return (
-        <div>
+        <header>
             <Link to = "/" className='link logo'>Internet of Things</Link>
             <Nav />
-        </div>
+        </header>
     );
 }
 
