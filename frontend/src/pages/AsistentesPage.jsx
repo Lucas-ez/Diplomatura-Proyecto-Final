@@ -25,8 +25,11 @@ const asistentes = [
     }
 ]
 
-const Asistente = ({ img, nombreImg, titulo, descripcion }) => {
-    
+const Asistente = (args) => {
+
+    const index = args.props.index
+    const { img, nombreImg, titulo, descripcion } = args.props.asistente
+
     return (
         <div style={
             {   
@@ -34,8 +37,8 @@ const Asistente = ({ img, nombreImg, titulo, descripcion }) => {
                 display: "flex",
                 alignItems: "center",
                 gap: "1.5em",
-                marginBottom: (titulo==="Alexa")?"2em":"6em",
-                flexDirection: (titulo==="Alexa")?"row-reverse":"row",
+                marginBottom: (index%2 === 1)?"2em":"6em",
+                flexDirection: (index%2 === 1)?"row-reverse":"row",
             }
         }>
             <img src={img} alt={nombreImg} style={
@@ -72,8 +75,8 @@ function AsistentesPage() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis saepe dolor facilis cumque, nisi, debitis iusto officia neque sed accusamus possimus nesciunt eveniet excepturi dolores quidem harum laboriosam quaerat autem.
             </p>
             {
-                asistentes.map(asistente => (
-                    <Asistente key={asistente.nombreImg} {...asistente} />
+                asistentes.map((asistente, index) => (
+                    <Asistente key={asistente.nombreImg} props = {{asistente, index}} />
                 ))
             }
         </main>
