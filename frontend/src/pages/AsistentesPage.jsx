@@ -50,11 +50,11 @@ const Asistente = (args) => {
             <div>
                 <Subtitle txt={titulo} />
                 <p style={
-                {   
-                    paddingTop: "2rem",
-                    fontSize: "2em",
-                }
-            }>{descripcion}</p>
+                    {   
+                        paddingTop: "2rem",
+                        fontSize: "2em",
+                    }
+                }>{descripcion}</p>
             </div>
         </div>
     )

@@ -1,0 +1,38 @@
+.grid {
+    padding-inline: 10%;
+    margin-bottom: 100px;
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 20px;
+}
+
+.bigBox {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-inline: 10%;
+    width: 80%;
+    height: 32vw;
+ 
+    /* border: 1px solid rgb(27, 254, 1);  */
+
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.imgBox {
+    height: 16vw;
+    width: 16vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.85;
+    border-radius: 2%;
+}
