@@ -3,7 +3,7 @@ function HomePage() {
         <main>
             <p style={
                 {
-                    fontSize: '3.6vw',
+                    fontSize: '3.8vw',
                     paddingTop: '2rem',
                     paddingInline: '5%',
                 }

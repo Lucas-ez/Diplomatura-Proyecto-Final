@@ -74,7 +74,7 @@ function SmartHomePage() {
                     <p style={
                     {   
                         paddingTop: "2rem",
-                        fontSize: "2em",
+                        fontSize: "2vw",
                     }
                     }>{bigBox.desc}</p>
                 </div>

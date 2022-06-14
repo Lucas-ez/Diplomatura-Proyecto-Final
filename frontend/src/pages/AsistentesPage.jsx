@@ -33,7 +33,7 @@ const Asistente = (args) => {
     return (
         <div style={
             {   
-                paddingInline: '12%',
+                paddingInline: '10%',
                 display: "flex",
                 alignItems: "center",
                 gap: "1.5em",
@@ -52,7 +52,7 @@ const Asistente = (args) => {
                 <p style={
                     {   
                         paddingTop: "2rem",
-                        fontSize: "2em",
+                        fontSize: "2vw",
                     }
                 }>{descripcion}</p>
             </div>
