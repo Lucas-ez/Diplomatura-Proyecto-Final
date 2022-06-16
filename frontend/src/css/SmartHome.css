@@ -8,8 +8,8 @@
 }
 
 .bigBox {
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 120px;
     margin-inline: 10%;
     width: 80%;
     height: 45vw;
@@ -39,10 +39,11 @@ img {
 
 .imgBox img {
     opacity: 0.6;
-    transition: opacity 0.5s;
+    transition: opacity, transform 0.5s;
 }
 
 .imgBox img:hover {
     cursor: pointer;
     opacity: 0.85;
+    transform: scale(1.05);
 }

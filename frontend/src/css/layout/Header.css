@@ -40,4 +40,9 @@ nav ul li {
     /* font-weight: bold; */
     text-transform: uppercase;
     font-family: 'Koulen', cursive;
+    transition: transform 0.3s;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
 }
