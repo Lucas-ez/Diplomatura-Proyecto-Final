@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(24, 24, 24) 100%);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header, main {
+  width: 100%;
+  max-width: 1180px;
+}
+
+.logo {
+  font-family: 'Smooch', cursive;
+  font-size: 64px;
+  font-weight: lighter;
+
+  margin-block: 2rem;
+  padding-inline: 2rem;
+}
